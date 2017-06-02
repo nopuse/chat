@@ -1,0 +1,22 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+<!--START NAV-BAR -->
+  <nav class="navbar navbar-default" roll="navigation">
+    <div class="container">
+      <div class="navbar-header">
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul id="navlinks" class="nav navbar-nav">
+          <li id="home" class='active'><a href="/">Home</a></li>
+          <li id="chat" class=''><a href="{{ url_for('chat_blueprint.chat_login', _external=True)}}">Chat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--END NAV-BAR -->
+
+
+
+
+{%endblock%}
